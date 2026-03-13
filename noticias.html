@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noticias | NovaLab Academy</title>
+
+  <meta name="description" content="Noticias y artículos sobre innovación, diseño, programación y transformación digital." />
+  <meta name="keywords" content="noticias tecnología, artículos innovación, desarrollo web, diseño digital" />
+  <meta name="author" content="Freily Peña" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+        <i class="bi bi-lightning-charge-fill brand-icon"></i>
+        <span>NovaLab Academy</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="noticias.html">Noticias</a></li>
+          <li class="nav-item"><a class="nav-link" href="enlaces.html">Enlaces</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
+          <li class="nav-item"><a class="nav-link" href="politica.html">Privacidad</a></li>
+          <li class="nav-item ms-lg-3">
+            <button id="themeToggle" class="btn btn-outline-light btn-sm rounded-pill px-3">
+              <i class="bi bi-moon-stars-fill me-1"></i>Modo oscuro
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-banner">
+    <div class="container text-center">
+      <h1 class="fw-bold">Noticias y artículos</h1>
+      <p class="mb-0">Contenido informativo sobre innovación, creatividad, programación y tendencias digitales.</p>
+    </div>
+  </section>
+
+  <main class="py-5">
+    <div class="container">
+      <div class="row text-center mb-5 reveal">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="section-title">Explora nuestras publicaciones</h2>
+          <p class="text-secondary">
+            Esta sección presenta artículos simulados con estilo editorial para dar más realismo, profundidad
+            y profesionalismo al proyecto web.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="news-card h-100">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80" alt="Inteligencia artificial" class="img-fluid" />
+            <div class="p-4">
+              <span class="news-tag">Innovación</span>
+              <h3>La inteligencia artificial en la educación moderna</h3>
+              <p class="text-secondary small mb-2">
+                <i class="bi bi-calendar-event me-1"></i>12 de marzo de 2026
+                <span class="mx-2">|</span>
+                <i class="bi bi-person-circle me-1"></i>Redacción NovaLab
+              </p>
+              <p>
+                La IA está transformando la forma en que los estudiantes aprenden, personalizando experiencias
+                y mejorando el acceso al conocimiento.
+              </p>
+              <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#articulo1">Leer más</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="news-card h-100">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1000&q=80" alt="Diseño web" class="img-fluid" />
+            <div class="p-4">
+              <span class="news-tag">Diseño</span>
+              <h3>El valor del diseño web responsivo</h3>
+              <p class="text-secondary small mb-2">
+                <i class="bi bi-calendar-event me-1"></i>15 de marzo de 2026
+                <span class="mx-2">|</span>
+                <i class="bi bi-person-circle me-1"></i>Equipo Creativo
+              </p>
+              <p>
+                Un sitio adaptable a móviles, tabletas y computadoras mejora la experiencia del usuario y
+                proyecta una imagen profesional.
+              </p>
+              <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#articulo2">Leer más</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="news-card h-100">
+            <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1000&q=80" alt="Programación" class="img-fluid" />
+            <div class="p-4">
+              <span class="news-tag">Programación</span>
+              <h3>JavaScript y la interactividad en la web</h3>
+              <p class="text-secondary small mb-2">
+                <i class="bi bi-calendar-event me-1"></i>18 de marzo de 2026
+                <span class="mx-2">|</span>
+                <i class="bi bi-person-circle me-1"></i>Redacción Técnica
+              </p>
+              <p>
+                JavaScript permite crear páginas más dinámicas, con validaciones, efectos, alertas,
+                modales y una mejor experiencia general.
+              </p>
+              <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#articulo3">Leer más</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="news-card h-100">
+            <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?auto=format&fit=crop&w=1000&q=80" alt="Tecnología educativa" class="img-fluid" />
+            <div class="p-4">
+              <span class="news-tag">Tecnología</span>
+              <h3>Herramientas digitales para aprender mejor</h3>
+              <p class="text-secondary small mb-2">
+                <i class="bi bi-calendar-event me-1"></i>20 de marzo de 2026
+                <span class="mx-2">|</span>
+                <i class="bi bi-person-circle me-1"></i>Núcleo Académico
+              </p>
+              <p>
+                Las plataformas interactivas permiten organizar contenido, reforzar conceptos y mejorar
+                la participación de los estudiantes.
+              </p>
+              <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#articulo4">Leer más</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="news-card h-100">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80" alt="Trabajo en equipo digital" class="img-fluid" />
+            <div class="p-4">
+              <span class="news-tag">Colaboración</span>
+              <h3>El trabajo en equipo en proyectos digitales</h3>
+              <p class="text-secondary small mb-2">
+                <i class="bi bi-calendar-event me-1"></i>22 de marzo de 2026
+                <span class="mx-2">|</span>
+                <i class="bi bi-person-circle me-1"></i>NovaLab Studio
+              </p>
+              <p>
+                Colaborar en proyectos web fortalece habilidades de comunicación, creatividad,
+                planificación y resolución de problemas.
+              </p>
+              <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#articulo5">Leer más</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="news-card h-100">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1000&q=80" alt="Futuro digital" class="img-fluid" />
+            <div class="p-4">
+              <span class="news-tag">Futuro</span>
+              <h3>La web como espacio de innovación y oportunidad</h3>
+              <p class="text-secondary small mb-2">
+                <i class="bi bi-calendar-event me-1"></i>25 de marzo de 2026
+                <span class="mx-2">|</span>
+                <i class="bi bi-person-circle me-1"></i>Editorial NovaLab
+              </p>
+              <p>
+                El desarrollo web continúa siendo una de las áreas más importantes para crear soluciones,
+                comunicar ideas y construir presencia digital.
+              </p>
+              <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#articulo6">Leer más</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- MODALES -->
+  <div class="modal fade" id="articulo1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <div class="modal-header">
+          <h5 class="modal-title">La inteligencia artificial en la educación moderna</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            La inteligencia artificial está permitiendo que muchos entornos educativos sean más personalizados,
+            eficientes y accesibles. Gracias a herramientas basadas en datos, hoy es posible adaptar actividades,
+            contenidos y ritmos de aprendizaje a las necesidades de cada estudiante.
+          </p>
+          <p>
+            Además, la IA no sustituye al docente, sino que puede servir como apoyo para reforzar procesos,
+            automatizar tareas repetitivas y enriquecer la experiencia de enseñanza.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="articulo2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <div class="modal-header">
+          <h5 class="modal-title">El valor del diseño web responsivo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Un diseño responsivo permite que el contenido de un sitio se adapte de forma correcta a distintos
+            tamaños de pantalla. Esto mejora la lectura, la navegación y la percepción de calidad del proyecto.
+          </p>
+          <p>
+            En la actualidad, una gran parte de los usuarios accede desde dispositivos móviles, por lo que
+            este enfoque ya no es opcional, sino una necesidad.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="articulo3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <div class="modal-header">
+          <h5 class="modal-title">JavaScript y la interactividad en la web</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            JavaScript es una de las tecnologías más importantes del desarrollo web moderno. Gracias a este lenguaje,
+            un sitio puede responder a acciones del usuario, mostrar mensajes, validar formularios y ofrecer una
+            interacción más completa.
+          </p>
+          <p>
+            Integrarlo junto a HTML, CSS y Bootstrap permite construir páginas más vivas, atractivas y funcionales.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="articulo4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <div class="modal-header">
+          <h5 class="modal-title">Herramientas digitales para aprender mejor</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Las herramientas digitales actuales permiten organizar información, compartir materiales,
+            integrar videos, actividades y recursos interactivos en un solo entorno.
+          </p>
+          <p>
+            Esto facilita el aprendizaje autónomo, mejora la participación del estudiante y ofrece
+            nuevas formas de reforzar el conocimiento.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="articulo5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <div class="modal-header">
+          <h5 class="modal-title">El trabajo en equipo en proyectos digitales</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Desarrollar un proyecto digital en equipo fortalece habilidades como la comunicación,
+            la organización, la toma de decisiones y la solución de problemas.
+          </p>
+          <p>
+            Además, fomenta la creatividad y permite distribuir mejor las responsabilidades para
+            obtener resultados más completos y profesionales.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="articulo6" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <div class="modal-header">
+          <h5 class="modal-title">La web como espacio de innovación y oportunidad</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            La web sigue siendo uno de los espacios más importantes para crear, comunicar, enseñar,
+            emprender y conectar con otras personas o comunidades.
+          </p>
+          <p>
+            Comprender su estructura y sus herramientas permite desarrollar proyectos con impacto real,
+            tanto en lo académico como en lo profesional.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5 class="mb-3">NovaLab Academy</h5>
+          <p class="mb-0">
+            Proyecto web académico orientado a innovación, tecnología, diseño y aprendizaje digital.
+          </p>
+        </div>
+
+        <div class="col-lg-4">
+          <h6 class="mb-3">Secciones</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="enlaces.html">Enlaces</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
+            <li><a href="politica.html">Privacidad</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h6 class="mb-3">Redes sociales</h6>
+          <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer-divider" />
+      <p class="text-center mb-0">© 2026 NovaLab Academy | Proyecto de Programación Web 1</p>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" class="scroll-top-btn" title="Volver arriba">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
